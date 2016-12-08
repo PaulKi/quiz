@@ -1,7 +1,5 @@
-#include <iostream>
-#include <string>
-
-using namespace std;
+#ifndef QUIZ_H_INCLUDED
+#define QUIZ_H_INCLUDED
 
 /**
 *Base class
@@ -9,14 +7,15 @@ using namespace std;
 class User
 {
     private:
-        string name;                     /**<string containing user name*/
-        int id;                          /**<integer containing user id number*/
+        string name;            /**<string containing user name*/
+        int id;                 /**<integer containing user id number*/
 
     public:
-        string getName() {return name;} /**<Access function to retrieve name*/
-        int getID()     {return id;}    /**<Access function to retrieve name*/
-        void login(string);             /**<function to login*/
-        void answer(int);               /**<function to send an answer*/
+        string getName();
+        int getID();
+        void login(string);     /**<function to login*/
+        void answer(int);       /**<function to send an answer*/
+
 };
 
 /**
@@ -59,9 +58,4 @@ class Quiz
         void save();                                 /**<save quiz result & report*/
 };
 
-
-int main()
-{
-
-    return 0;
-}
+#endif // QUIZ_H_INCLUDED
