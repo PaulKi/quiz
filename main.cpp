@@ -1,7 +1,9 @@
 #include <iostream>
 #include <string>
+#include "tinyxml2.h"
 
 using namespace std;
+using namespace tinyxml2;
 
 /**
 *Base class
@@ -62,6 +64,29 @@ class Quiz
 
 int main()
 {
+    XMLDocument xmlDoc;
+
+    XMLNode * pRoot = xmlDoc.NewElement("Root");
+    xmlDoc.InsertFirstChild(pRoot);
+    XMLElement * pElement = xmlDoc.NewElement("Questions document");
+    pRoot->InsertEndChild(pElement);
+
+    pElement = xmlDoc.NewElement("List");
+    pElement->SetAttribute("description", "list of questions");
+    pRoot->InsertEndChild(pElement);
+
+
+    for (int i=0; i<10; i++)
+    {
+        XMLElement * pListElement = xmlDoc.NewElement("Question");
+        pListElement->SetText(i);
+        pElement->SetAttribute("answer", i);
+        pElement->InsertEndChild(pListElement);
+    }
+
+    xmlDoc.SaveFile("SavedData.xml");
+
+
 
     return 0;
 }

@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1481205588 source:f:\git\quiz\quiz\main.cpp
+	<iostream>
+	<string>
+
+1480111570 source:f:\git\quiz\quiz\tinyxml2.cpp
+	"tinyxml2.h"
+	<new>
+	<stddef.h>
+	<stdarg.h>
+	<cstddef>
+	<cstdarg>
+
+1480111570 f:\git\quiz\quiz\tinyxml2.h
+	<ctype.h>
+	<limits.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stddef.h>
+	<cctype>
+	<climits>
+	<cstdio>
+	<cstdlib>
+	<cstring>
+	<stdint.h>
+	<android/log.h>
+	<assert.h>
+
