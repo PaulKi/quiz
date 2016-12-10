@@ -4,7 +4,7 @@
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>250</x>
+      <x>230</x>
       <y>90</y>
       <w>100</w>
       <h>30</h>
@@ -15,7 +15,7 @@
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>400</x>
+      <x>380</x>
       <y>90</y>
       <w>100</w>
       <h>30</h>
@@ -26,10 +26,10 @@
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>440</x>
+      <x>420</x>
       <y>140</y>
       <w>20</w>
-      <h>230</h>
+      <h>260</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -37,7 +37,7 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>440</x>
+      <x>420</x>
       <y>110</y>
       <w>30</w>
       <h>50</h>
@@ -48,7 +48,7 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>300</x>
+      <x>280</x>
       <y>130</y>
       <w>160</w>
       <h>40</h>
@@ -60,7 +60,7 @@ lt=&lt;-</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>450</x>
+      <x>430</x>
       <y>140</y>
       <w>140</w>
       <h>70</h>
@@ -72,8 +72,8 @@ Check Login </panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>300</x>
-      <y>310</y>
+      <x>280</x>
+      <y>350</y>
       <w>160</w>
       <h>40</h>
     </coordinates>
@@ -84,7 +84,7 @@ lt=&lt;-</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>300</x>
+      <x>280</x>
       <y>170</y>
       <w>160</w>
       <h>40</h>
@@ -96,8 +96,8 @@ lt=&lt;-</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>290</x>
-      <y>190</y>
+      <x>270</x>
+      <y>220</y>
       <w>30</w>
       <h>90</h>
     </coordinates>
@@ -107,10 +107,10 @@ lt=&lt;-</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>290</x>
-      <y>260</y>
+      <x>270</x>
+      <y>290</y>
       <w>20</w>
-      <h>100</h>
+      <h>110</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -118,8 +118,8 @@ lt=&lt;-</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>300</x>
-      <y>250</y>
+      <x>280</x>
+      <y>290</y>
       <w>160</w>
       <h>40</h>
     </coordinates>
@@ -130,8 +130,8 @@ lt=&lt;-</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>170</x>
-      <y>210</y>
+      <x>150</x>
+      <y>260</y>
       <w>290</w>
       <h>40</h>
     </coordinates>
@@ -142,8 +142,8 @@ lt=&lt;-</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>300</x>
-      <y>280</y>
+      <x>280</x>
+      <y>320</y>
       <w>160</w>
       <h>40</h>
     </coordinates>
@@ -154,30 +154,8 @@ lt=&lt;-</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>160</x>
-      <y>240</y>
-      <w>30</w>
-      <h>50</h>
-    </coordinates>
-    <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;30.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>160</x>
-      <y>270</y>
-      <w>20</w>
-      <h>90</h>
-    </coordinates>
-    <panel_attributes/>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>170</x>
-      <y>310</y>
+      <x>150</x>
+      <y>320</y>
       <w>140</w>
       <h>40</h>
     </coordinates>
@@ -188,8 +166,8 @@ lt=&lt;-</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>170</x>
-      <y>280</y>
+      <x>150</x>
+      <y>290</y>
       <w>140</w>
       <h>40</h>
     </coordinates>
@@ -200,10 +178,10 @@ lt=&lt;-</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>290</x>
+      <x>270</x>
       <y>140</y>
       <w>20</w>
-      <h>60</h>
+      <h>90</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -211,7 +189,7 @@ lt=&lt;-</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>170</x>
+      <x>150</x>
       <y>130</y>
       <w>140</w>
       <h>40</h>
@@ -223,10 +201,10 @@ lt=&lt;-</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>160</x>
+      <x>140</x>
       <y>140</y>
       <w>20</w>
-      <h>110</h>
+      <h>260</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -234,7 +212,7 @@ lt=&lt;-</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>160</x>
+      <x>140</x>
       <y>110</y>
       <w>30</w>
       <h>50</h>
@@ -245,7 +223,7 @@ lt=&lt;-</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>120</x>
+      <x>100</x>
       <y>90</y>
       <w>100</w>
       <h>30</h>
@@ -256,12 +234,60 @@ lt=&lt;-</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>290</x>
+      <x>270</x>
       <y>110</y>
       <w>30</w>
       <h>50</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>150</x>
+      <y>170</y>
+      <w>140</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Admin Login
+lt=&lt;-</panel_attributes>
+    <additional_attributes>120.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>150</x>
+      <y>200</y>
+      <w>140</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Take Quiz
+lt=&lt;-</panel_attributes>
+    <additional_attributes>120.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>200</y>
+      <w>160</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Calculate Result
+lt=&lt;-</panel_attributes>
+    <additional_attributes>140.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>150</x>
+      <y>230</y>
+      <w>290</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Return result
+lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;20.0;270.0;20.0</additional_attributes>
   </element>
 </diagram>
