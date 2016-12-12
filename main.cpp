@@ -66,25 +66,18 @@ int main()
 {
     XMLDocument xmlDoc;
 
-    XMLNode * pRoot = xmlDoc.NewElement("Root");
+    XMLError eResult = xmlDoc.LoadFile("SavedData.xml");
+    XMLNode * pRoot = xmlDoc.FirstChild();
+
     xmlDoc.InsertFirstChild(pRoot);
-    XMLElement * pElement = xmlDoc.NewElement("Questions document");
-    pRoot->InsertEndChild(pElement);
+    if (pRoot == NULL) return XML_ERROR_FILE_READ_ERROR;
 
-    pElement = xmlDoc.NewElement("List");
-    pElement->SetAttribute("description", "list of questions");
-    pRoot->InsertEndChild(pElement);
+    XMLElement * pElement = pRoot->FirstChildElement("Question");
+    if (pElement == NULL) return XML_ERROR_PARSING_ELEMENT;
 
-
-    for (int i=0; i<10; i++)
-    {
-        XMLElement * pListElement = xmlDoc.NewElement("Question");
-        pListElement->SetAttribute("answer", i);
-        pListElement->SetText("question 1 blah blah (1 (2 (3");
-        pElement->InsertEndChild(pListElement);
-    }
-
-    xmlDoc.SaveFile("SavedData.xml");
+    int istring;
+    eResult = pElement->Query(&istring);
+    XMLCheckResult(eResult);
 
 
 
