@@ -2,14 +2,17 @@
     <Questions document/>
     <List description="list of questions">
         <Question answer="a">1. The first step in Software Development Life Cycle(SDLC) is:\n(a) Preliminary investigation and analysis\n(b) System Design\n(c) System Testing\n(d) Coding</Question>
-        <Question answer="1">question 1 blah blah (1 (2 (3</Question>
-        <Question answer="2">question 1 blah blah (1 (2 (3</Question>
-        <Question answer="3">question 1 blah blah (1 (2 (3</Question>
-        <Question answer="4">question 1 blah blah (1 (2 (3</Question>
-        <Question answer="5">question 1 blah blah (1 (2 (3</Question>
-        <Question answer="6">question 1 blah blah (1 (2 (3</Question>
-        <Question answer="7">question 1 blah blah (1 (2 (3</Question>
-        <Question answer="8">question 1 blah blah (1 (2 (3</Question>
-        <Question answer="9">question 1 blah blah (1 (2 (3</Question>
+        <Question answer="b">2. The detailed study of existing system is referred to as: \n(a) System Planning\n(b) System Analysis\n(c) Feasibility Study\n(d) Design DFD</Question>
+        <Question answer="d">3. System analysis and design phase of Software Development Lift Cycle (SDLC) 
+includes which of the following:\n(a) Parellel run\n(b) Sizing\n(c) Specification Freeze\n(d) All of these/Question>
+        <Question answer="a">4. Prototyping aims at:\n(a) End user understanding and approval\n(b) Program logoc\n(c) Planning of dataflow organisation\n(d) None of these</Question>
+        <Question answer="b">5. What is Prototype:\n(a) Mini-model of existing system\n(b) Mini-model of proposed system\n(c) Working model of the existing system\n(d) None of these</Question>
+        <Question answer="b">6. Risk analysis of a project is done in:\n(a) System Analysis phase\n(b) Feasibility study\n(c) Implementation phase\n(d) Maintenence phase</Question>
+        <Question answer="c">7. In which step of the SDLC project termination could be done:\n(a) Design phase\n(b) System Maintenece phase\n(c) Feasibility phase\n(d) Coding phase</Question>
+        <Question answer="c">8. The fundamental objective of system analysis is to:\n(a) Understand computer hardware\n(b) Train managers in mathmatical analysis\n(c) Study and understand a complex system and modify it in some way\n(d) Run simulation programmes</Question>
+        <Question answer="b">9. Which on of the following is a not stage of SDLC:\n(a) System analysis\n(b) Problem identification\n(c) System Design\n(d) Feasibility study</Question>
+        <Question answer="c">10.An iterative process of system development in which requirements are converted to a 
+working system that is continually revised through close work between an analyst and user 
+is called:\n(a) Waterfall modelling\n(b) Iterative modeling\n(c) Spiral Modeling\n(d) None of these</Question>
     </List>
 </Root>
