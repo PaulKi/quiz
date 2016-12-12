@@ -79,8 +79,8 @@ int main()
     for (int i=0; i<10; i++)
     {
         XMLElement * pListElement = xmlDoc.NewElement("Question");
-        pListElement->SetText(i);
-        pElement->SetAttribute("answer", i);
+        pListElement->SetAttribute("answer", i);
+        pListElement->SetText("question 1 blah blah (1 (2 (3");
         pElement->InsertEndChild(pListElement);
     }
 
