@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['getid',['getID',['../class_user.html#adce159ebd006321c4bfc869998064e7f',1,'User']]],
-  ['getname',['getName',['../class_user.html#adb316ac38d5f62a967686e7b736a0469',1,'User']]]
+  ['id',['id',['../class_user.html#aa7e6e39b43020bbe9c3a196b3689b0f7',1,'User']]]
 ];

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['save',['save',['../class_quiz.html#a2a30f1d27f8a873dedbf4a19c4143f31',1,'Quiz::save()'],['../class_quiz.html#a2a30f1d27f8a873dedbf4a19c4143f31',1,'Quiz::save()']]],
-  ['sendq',['sendQ',['../class_quiz.html#a31824f4cb143442fb30d05d5193e6e90',1,'Quiz::sendQ(string *question)'],['../class_quiz.html#a31824f4cb143442fb30d05d5193e6e90',1,'Quiz::sendQ(string *question)']]],
-  ['student',['Student',['../class_student.html',1,'']]]
+  ['remove',['remove',['../class_admin.html#a7ff3c33183ba1b6dee66c5e8b1aac386',1,'Admin::remove()'],['../class_admin.html#a7ff3c33183ba1b6dee66c5e8b1aac386',1,'Admin::remove()']]],
+  ['report',['report',['../class_quiz.html#aefcae0c2187864f7764e3a2cc536f723',1,'Quiz::report(int id, string profile_type)'],['../class_quiz.html#aefcae0c2187864f7764e3a2cc536f723',1,'Quiz::report(int id, string profile_type)']]],
+  ['restartquiz',['restartQuiz',['../class_student.html#a466ca7dba4ff1ec96455157de6e49ebf',1,'Student::restartQuiz()'],['../class_student.html#a466ca7dba4ff1ec96455157de6e49ebf',1,'Student::restartQuiz()']]]
 ];
