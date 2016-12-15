@@ -51,3 +51,9 @@
 	<android/log.h>
 	<assert.h>
 
+1481724060 source:e:\git\quiz\quiz\main.cpp
+	<iostream>
+	<string>
+	<vector>
+	"tinyxml2.h"
+

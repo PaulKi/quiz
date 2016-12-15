@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <vector>
 #include "tinyxml2.h"
 
 using namespace std;
@@ -50,8 +51,8 @@ class Admin: public User
 class Quiz
 {
     public:
-        string question[];                            /**<String array to store 10 question quiz*/
-        int answers[];                                /**<int array to store 10 correct answers from quiz*/
+        std::vector<string> qQuestions;            /**<a vector used to store 10 questions as text*/
+        std::vector<string> qAnswers;              /**<a vector to store the 10 correct answers tot he questions stored in qQuestions*/
 
         void read();
         void makeQs(string *question, int *answer);  /**<Function to fetch 10 random questions from database*/
@@ -65,21 +66,38 @@ class Quiz
 int main()
 {
     XMLDocument xmlDoc;
+    std::vector<int> vecList;
+    const char * questionText = NULL;
+    const char * answerText = NULL;
 
-    XMLError eResult = xmlDoc.LoadFile("SavedData.xml");
+    Quiz quiz1;
+
+    XMLError eResult = xmlDoc.LoadFile("derp.xml");
     XMLNode * pRoot = xmlDoc.FirstChild();
 
-    xmlDoc.InsertFirstChild(pRoot);
-    if (pRoot == NULL) return XML_ERROR_FILE_READ_ERROR;
+    XMLElement *pElement = pRoot->FirstChildElement("List");
 
-    XMLElement * pElement = pRoot->FirstChildElement("Question");
-    if (pElement == NULL) return XML_ERROR_PARSING_ELEMENT;
+    XMLElement * pListElement = pElement->FirstChildElement("Item");
 
-    int istring;
-    eResult = pElement->Query(&istring);
-    XMLCheckResult(eResult);
+    while(pListElement != NULL)
+    {
+        cout << "looping" << endl;
+        int iOutListValue;
+        pListElement->QueryIntText(&iOutListValue);
+        questionText = pListElement->Attribute("question");
+        answerText = pListElement->Attribute("answer");
 
+        quiz1.qQuestions.push_back(questionText);
+        quiz1.qAnswers.push_back(answerText);
 
+        vecList.push_back(iOutListValue);
+        pListElement = pListElement->NextSiblingElement("item");
+
+    }
+
+    cout << quiz1.qQuestions[0] << endl;
+
+    cout << quiz1.qAnswers[0] <<  endl;
 
     return 0;
 }
