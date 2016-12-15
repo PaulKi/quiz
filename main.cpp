@@ -72,16 +72,13 @@ int main()
 
     Quiz quiz1;
 
-    XMLError eResult = xmlDoc.LoadFile("derp.xml");
+    XMLError eResult = xmlDoc.LoadFile("SavedData.xml");
     XMLNode * pRoot = xmlDoc.FirstChild();
-
     XMLElement *pElement = pRoot->FirstChildElement("List");
-
     XMLElement * pListElement = pElement->FirstChildElement("Item");
 
     while(pListElement != NULL)
     {
-        cout << "looping" << endl;
         int iOutListValue;
         pListElement->QueryIntText(&iOutListValue);
         questionText = pListElement->Attribute("question");
@@ -91,13 +88,15 @@ int main()
         quiz1.qAnswers.push_back(answerText);
 
         vecList.push_back(iOutListValue);
-        pListElement = pListElement->NextSiblingElement("item");
+        pListElement = pListElement->NextSiblingElement("Item");
 
     }
 
-    cout << quiz1.qQuestions[0] << endl;
-
-    cout << quiz1.qAnswers[0] <<  endl;
+    for(int i=1; i<10; i++)
+    {
+        cout << "Question " << i << endl;
+        cout << quiz1.qQuestions[i] << endl << endl;
+    }
 
     return 0;
 }
