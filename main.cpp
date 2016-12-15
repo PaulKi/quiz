@@ -66,49 +66,59 @@ class Quiz
 
 int main()
 {
-    XMLDocument xmlDoc;
-    std::vector<int> vecList;
-    const char * questionText = NULL;
-    const char * answerText = NULL;
-    string input;
+    string name;
+    cout << "enter name" << endl;
+    cin >> name;
 
-    Quiz quiz1;
-    Student student;
-
-    student.score =0;
-
-    xmlDoc.LoadFile("SavedData.xml");
-    XMLNode * pRoot = xmlDoc.FirstChild();
-    XMLElement *pElement = pRoot->FirstChildElement("List");
-    XMLElement * pListElement = pElement->FirstChildElement("Item");
-
-    while(pListElement != NULL)
+    if(name == "student" || name == "admin")
     {
-        int iOutListValue;
-        pListElement->QueryIntText(&iOutListValue);
-        questionText = pListElement->Attribute("question");
-        answerText = pListElement->Attribute("answer");
+        XMLDocument xmlDoc;
+        std::vector<int> vecList;
+        const char * questionText = NULL;
+        const char * answerText = NULL;
+        string input;
 
-        quiz1.qQuestions.push_back(questionText);
-        quiz1.qAnswers.push_back(answerText);
+        Quiz quiz1;
+        Student student;
 
-        vecList.push_back(iOutListValue);
-        pListElement = pListElement->NextSiblingElement("Item");
+        student.score =0;
 
+        xmlDoc.LoadFile("SavedData.xml");
+        XMLNode * pRoot = xmlDoc.FirstChild();
+        XMLElement *pElement = pRoot->FirstChildElement("List");
+        XMLElement * pListElement = pElement->FirstChildElement("Item");
+
+        while(pListElement != NULL)
+        {
+            int iOutListValue;
+            pListElement->QueryIntText(&iOutListValue);
+            questionText = pListElement->Attribute("question");
+            answerText = pListElement->Attribute("answer");
+
+            quiz1.qQuestions.push_back(questionText);
+            quiz1.qAnswers.push_back(answerText);
+
+            vecList.push_back(iOutListValue);
+            pListElement = pListElement->NextSiblingElement("Item");
+
+        }
+
+        for(int i=0; i<10; i++)
+        {
+            cout << "Question " << i+1 << endl;
+            cout << quiz1.qQuestions[i] << endl << endl;
+            cin >> input;
+
+            if(input == quiz1.qAnswers[i])
+                student.score += 10;
+            system("CLS");
+        }
+
+        cout << "Your score is " << student.score << "%" << endl << endl;
     }
 
-    for(int i=0; i<10; i++)
-    {
-        cout << "Question " << i+1 << endl;
-        cout << quiz1.qQuestions[i] << endl << endl;
-        cin >> input;
+    else
+        cout << "user not recognised" << endl;
 
-        if(input == quiz1.qAnswers[i])
-            student.score += 10;
-        system("CLS");
-    }
-
-    cout << "Your score is " << student.score << "%" << endl << endl;
-
-    return student.score;
+    return 0;
 }
