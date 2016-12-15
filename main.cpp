@@ -11,15 +11,16 @@ using namespace tinyxml2;
 */
 class User
 {
-    private:
+    public:
         string name;                     /**<string containing user name*/
         int id;                          /**<integer containing user id number*/
+        int score;                      /**<stores the current quiz score of user*/
 
-    public:
         string getName() {return name;} /**<Access function to retrieve name*/
         int getID()     {return id;}    /**<Access function to retrieve name*/
         void login(string);             /**<function to login*/
-        void answer(int);               /**<function to send an answer*/
+        void answer(char ans);          /**<function to send an answer*/
+
 };
 
 /**
@@ -69,10 +70,14 @@ int main()
     std::vector<int> vecList;
     const char * questionText = NULL;
     const char * answerText = NULL;
+    string input;
 
     Quiz quiz1;
+    Student student;
 
-    XMLError eResult = xmlDoc.LoadFile("SavedData.xml");
+    student.score =0;
+
+    xmlDoc.LoadFile("SavedData.xml");
     XMLNode * pRoot = xmlDoc.FirstChild();
     XMLElement *pElement = pRoot->FirstChildElement("List");
     XMLElement * pListElement = pElement->FirstChildElement("Item");
@@ -92,11 +97,18 @@ int main()
 
     }
 
-    for(int i=1; i<10; i++)
+    for(int i=0; i<10; i++)
     {
-        cout << "Question " << i << endl;
+        cout << "Question " << i+1 << endl;
         cout << quiz1.qQuestions[i] << endl << endl;
+        cin >> input;
+
+        if(input == quiz1.qAnswers[i])
+            student.score += 10;
+        system("CLS");
     }
 
-    return 0;
+    cout << "Your score is " << student.score << "%" << endl << endl;
+
+    return student.score;
 }

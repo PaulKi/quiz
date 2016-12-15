@@ -2,7 +2,8 @@
     <List description="list of questions">
         <Item answer="a" question="1. The first step in Software Development Life Cycle(SDLC) is:
 (a) Preliminary investigation and analysis
-(b) System Design\n(c) System Testing
+(b) System Design
+(c) System Testing
 (d) Coding" >1</Item>
         <Item answer="b" question="2. The detailed study of existing system is referred to as: 
 (a) System Planning
